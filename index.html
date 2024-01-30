@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+      </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>IIT Indore Timetable</title>
+    <body>
+    <header>
+        <img src="logo.png" alt="IIT Indore Logo" width="300" height="300">
+        <h1>Welcome IIT Indore's Timetable Website</h1>
+    </header>
+
+</head>
+<body>
+    <div class="container">
+        <h1>2024 Spring Timetable (B.tech 2nd year)</h1>
+        <p>Please select your academic year:</p>
+        <select id="branchSelect">
+            <option value="cse">Computer Science Eng.</option>
+            <option value="ce">Civil Eng.</option>
+            <option value="me">Mechanical Eng.</option>
+            <option value="ee">Electrical Eng.</option>
+            <option value="mems">Metallurgical Eng.</option>
+        </select>
+        <button onclick="showTimetable()">Show Timetable</button>
+        <div id="timetableDisplay"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

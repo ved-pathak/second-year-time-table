@@ -1,0 +1,32 @@
+
+body {
+    font-family: "Gill Sans", sans-serif;
+    color: white;
+    margin: 150px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: #9AA4EC;
+}
+
+.container {
+    text-align: center;
+    color: white;
+}
+
+button {
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    font-family: "Gill Sans", sans-serif;
+
+}
+
+#timetableDisplay {
+    text-align: left;
+
+    margin-top: 10px;}
+
