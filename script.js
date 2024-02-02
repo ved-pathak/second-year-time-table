@@ -1,4 +1,4 @@
-// Sample timetable data for B.Tech 2nd Year
+
 const timetableData = {
     "cse": {
         "monday": [
@@ -212,16 +212,16 @@ function showTimetable() {
     const todayIndex = new Date().getDay();
     const today = daysOfWeek[todayIndex];
 
-    // You would fetch the timetable data based on the selected branch from your backend here
+    // to fetch the timetable data based on the selected branch from backend
     const timetable = timetableData[selectedBranch][today];
 
-    // Check if it's after 6 pm to show tomorrow's classes
+    // after 6 pm to show tomorrow's classes
     const now = new Date();
     const isAfter6PM = now.getHours() >= 18;
     const tomorrow = daysOfWeek[(todayIndex + 1) % 7];
     const nextDayTimetable = isAfter6PM ? timetableData[selectedBranch][tomorrow] : null;
 
-    // Display the timetable in an organized way
+    // Display the timetable
     let timetableHTML = `<h2>${today.charAt(0).toUpperCase() + today.slice(1)}'s Classes</h2>`;
 
     if (timetable && timetable.length > 0) {
@@ -243,6 +243,6 @@ function showTimetable() {
         timetableHTML += "</ul>";
     }
 
-    // Display the timetable in the timetableDisplay div
+    // Display timetable in the timetableDisplay div
     timetableDisplay.innerHTML = timetableHTML;
 }
